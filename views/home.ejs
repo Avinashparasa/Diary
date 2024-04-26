@@ -1,0 +1,12 @@
+<%-include("partials/header.ejs") %>
+
+
+<%  forapp.forEach(function(post){ %>
+    <h1 class="titlesname"><%= post.title %></h1>
+    <p class="sameline everything"><%= post.matter.substring(0,100)+ "... " %></p><a href="/posts/<%=post.title%>" class="sameline">more</a>
+    <% })%>
+
+<button onclick=location.href='/compose' class="nextline">TO COMPOSE</button>
+
+
+<%-include("partials/footer.ejs") %>

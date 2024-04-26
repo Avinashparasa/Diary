@@ -1,0 +1,10 @@
+<%-include("partials/header.ejs") %>
+<form action="/compose" method="post">
+<label>Title</label>
+<input name="title" placeholder="Give title to news">
+<label>Content</label>
+<textarea name="area" placeholder="Write content of the day"></textarea>
+<button onclick=location.href='/post' class="posting">POST</button>
+</form>
+
+<%-include("partials/footer.ejs") %>
